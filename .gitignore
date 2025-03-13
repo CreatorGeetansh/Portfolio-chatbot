@@ -1,0 +1,8 @@
+# Ignore deployment files
+deployment.yaml
+# Ignore environment variables
+.env
+# Ignore virtual environment
+venv/
+# Ignore all YAML files
+*.yaml
