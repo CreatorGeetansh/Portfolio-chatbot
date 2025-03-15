@@ -91,6 +91,10 @@ vectors = load_pdf_and_create_embeddings()
 # Initialize DbHelper
 db_helper = DbHelper()
 
+@app.get("/ping")
+def ping():
+    return {"status": "alive"}
+
 # Define the endpoint to answer questions
 @app.post("/ask")
 async def ask_question(request: Request):
